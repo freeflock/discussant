@@ -1,0 +1,14 @@
+services:
+  discussant:
+    image: josiahdc/discussant:0.1
+    build:
+      context: .
+    networks:
+      - ratatosk_ratatosk
+    env_file:
+      - discussant.env
+
+
+networks:
+  ratatosk_ratatosk:
+    external: true
