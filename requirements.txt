@@ -1,4 +1,4 @@
-ratatosk-errands==0.22
+ratatosk-errands==0.24
 loguru==0.7.2
-langchain==0.3.7
-langchain-openai==0.2.2
+langchain==0.3.9
+langchain-openai==0.2.10
