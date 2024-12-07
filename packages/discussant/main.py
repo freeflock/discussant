@@ -23,7 +23,7 @@ def receive_prompt_template_errand(channel, method, properties, body):
 
         logger.info(f"running inference")
         prompt = hub.pull(errand.instructions.prompt_name)
-        model = ChatOpenAI(model="gpt-4o")
+        model = ChatOpenAI(model="o1-preview")
         chain = prompt | model
         output = chain.invoke(errand.instructions.input_variables)
         logger.info(f"emitting echo")
