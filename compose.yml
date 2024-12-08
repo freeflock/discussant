@@ -1,6 +1,6 @@
 services:
   discussant:
-    image: josiahdc/discussant:0.2
+    image: josiahdc/discussant:0.3
     build:
       context: .
     networks:
